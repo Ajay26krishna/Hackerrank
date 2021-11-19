@@ -1,0 +1,40 @@
+1
+import java.io.*;
+2
+import java.util.*;
+3
+​
+4
+public class Solution {
+5
+​
+6
+    public static void main(String[] args) {
+7
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+8
+        Scanner sc=new Scanner(System.in);
+9
+        int N=sc.nextInt();
+10
+        int[] a=new int[N];
+11
+        for(int i=0;i<N;i++)
+12
+         a[i]=sc.nextInt();
+13
+        int max=a[0];
+14
+        for(int i=0;i<N;i++){
+15
+            if(a[i]>max)
+16
+                max=a[i];
+17
+        }
+18
+        System.out.println(max);
+19
+    }
+20
+}
